@@ -1,0 +1,125 @@
+Microchip MPLAB XC8 PIC(R) Assembler V2.46
+
+Linker command line:
+
+-W-3 \
+  --edf=C:\Program Files\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
+  -cs -h+dist/default/production\testpic2.X.production.sym \
+  --cmf=dist/default/production\testpic2.X.production.cmf -z -Q16F877A \
+  -oC:\Users\ZERONE~1\AppData\Local\Temp\xcAs648.\driver_tmp_3.o \
+  --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
+  -Mdist/default/production/testpic2.X.production.map -E1 --acfsm=1493 \
+  -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
+  -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
+  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
+  -ABANK3=0190h-01EFh -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -ACONFIG=02007h-02007h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
+  -AEEDATA=00h-0FFh/02100h -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 \
+  -DCONST=2 -DENTRY=2 build/default/production/main.o 
+
+Object code version is 3.11
+
+Machine type is 16F877A
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+build/default/production/main.o
+                barfunc                             7F2      7F2        E      FE4       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                barfunc                             7F2      7F2        E         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   COMMON         
+
+        CLASS   BANK0          
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                barfunc                        0007F2  00000E  000800       FE4       0  CODE        2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            020-06F            50           1
+        BANK1            0A0-0EF            50           1
+        BANK2            110-16F            60           1
+        BANK3            190-1EF            60           1
+        CODE             000-7F1           7F2           2
+                         800-1FFF           800
+        COMMON           070-07F            10           1
+        CONFIG           2007-2007             1           2
+        CONST            000-7F1           100           2
+                         800-1FFF           100
+        EEDATA           2100-21FF           100           2
+        ENTRY            000-7F1           100           2
+                         800-1FFF           100
+        IDLOC            2000-2003             4           2
+        RAM              020-06F            50           1
+                         0A0-0EF            50
+                         110-16F            60
+                         190-1EF            60
+        SFR0             000-01F            20           1
+        SFR1             080-09F            20           1
+        SFR2             100-10F            10           1
+        SFR3             180-18F            10           1
+        STRCODE          000-7F1           7F2           2
+                         800-1FFF          1800
+        STRING           000-7F1           100           2
+                         800-1FFF           100
+
+                                  Symbol Table
+
+__H__absolute__ __absolute__ 000  __Hcode         code         000
+__Hdata         data         000  __Hedata        edata        000
+__Hspace_0      (abs)        800  __Hspace_1      (abs)        000
+__Hspace_3      (abs)        000  __Hudata        udata        000
+__Hudata_bank0  udata_bank0  000  __Hudata_bank1  udata_bank1  000
+__Hudata_bank2  udata_bank2  000  __Hudata_bank3  udata_bank3  000
+__Hudata_shr    udata_shr    000  __L__absolute__ __absolute__ 000
+__Lcode         code         000  __Ldata         data         000
+__Ledata        edata        000  __Lspace_0      (abs)        000
+__Lspace_1      (abs)        000  __Lspace_3      (abs)        000
+__Ludata        udata        000  __Ludata_bank0  udata_bank0  000
+__Ludata_bank1  udata_bank1  000  __Ludata_bank2  udata_bank2  000
+__Ludata_bank3  udata_bank3  000  __Ludata_shr    udata_shr    000
+__S0            (abs)        800  __S1            (abs)        000
+__S3            (abs)        000  
