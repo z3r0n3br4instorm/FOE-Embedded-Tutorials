@@ -1,21 +1,21 @@
 # 1 "main.asm"
 # 1 "<built-in>" 1
 # 1 "main.asm" 2
-# 1 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.inc" 1 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.inc" 1 3
 
 
 
 
 
 
-# 1 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.inc" 1 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.inc" 1 3
 
 
 
-# 1 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_as_chip_select.inc" 1 3
-# 663 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_as_chip_select.inc" 3
-# 1 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f877a.inc" 1 3
-# 47 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f877a.inc" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_as_chip_select.inc" 1 3
+# 663 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_as_chip_select.inc" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f877a.inc" 1 3
+# 47 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f877a.inc" 3
 INDF equ 0000h
 
 
@@ -1584,7 +1584,7 @@ EECON1_EEPGD_MASK equ 0080h
 
 
 EECON2 equ 018Dh
-# 1879 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f877a.inc" 3
+# 1879 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\proc\\pic16f877a.inc" 3
 psect udata_shr,class=COMMON,space=1,noexec
 psect udata,class=RAM,space=1,noexec
 psect udata_bank0,class=BANK0,space=1,noexec
@@ -1594,8 +1594,8 @@ psect udata_bank3,class=BANK3,space=1,noexec
 psect code,class=CODE,space=0,delta=2
 psect data,class=STRCODE,space=0,delta=2,noexec
 psect edata,class=EEDATA,space=3,delta=2,noexec
-# 664 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_as_chip_select.inc" 2 3
-# 5 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.inc" 2 3
+# 664 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic_as_chip_select.inc" 2 3
+# 5 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\pic.inc" 2 3
 
 
 
@@ -1639,7 +1639,7 @@ addfsr FSR1,stk_offset
 stk_offset SET 0
 auto_size SET 0
 ENDM
-# 8 "C:/Users/Zerone Brianstorm/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.inc" 2 3
+# 8 "C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.inc" 2 3
 # 1 "main.asm" 2
 
  ;define address
@@ -1667,13 +1667,13 @@ STATUS equ 0x03
 
  loopInit:
     BTFSS PORTB,1
-    GOTO led_off
     GOTO led_on
+    GOTO led_off
     led_on:
-       MOVLW 0b0000011;
+       MOVLW 0xff
        MOVWF PORTD
     led_off:
-       MOVLW 0b0000010;
+       MOVLW 0x00;
        MOVWF PORTD
  GOTO loopInit
  end

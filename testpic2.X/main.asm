@@ -24,13 +24,13 @@ STATUS  equ 0x03
  
  loopInit:
     BTFSS PORTB,1
-    GOTO led_off
     GOTO led_on
+    GOTO led_off
     led_on:
-       MOVLW 0b0000011;
+       MOVLW 0xff
        MOVWF PORTD
     led_off:
-       MOVLW 0b0000010;
+       MOVLW 0x00;
        MOVWF PORTD
  GOTO loopInit
  end
