@@ -1,0 +1,58 @@
+__S0 800 0 ABS 0
+__S1 0 0 ABS 0
+__S3 0 0 ABS 0
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+__Hdata 0 0 ABS 0
+__Ldata 0 0 ABS 0
+__Hudata_bank0 0 0 ABS 0
+__Ludata_bank0 0 0 ABS 0
+__Hudata_shr 0 0 ABS 0
+__Ludata_shr 0 0 ABS 0
+__H__absolute__ 0 0 ABS 0
+__L__absolute__ 0 0 ABS 0
+__Hedata 0 0 ABS 0
+__Ledata 0 0 ABS 0
+__Hudata 0 0 ABS 0
+__Ludata 0 0 ABS 0
+__Hudata_bank1 0 0 ABS 0
+__Ludata_bank1 0 0 ABS 0
+__Hspace_0 800 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__Hspace_1 0 0 ABS 0
+__Lspace_1 0 0 ABS 0
+__Hspace_3 0 0 ABS 0
+__Lspace_3 0 0 ABS 0
+__Hudata_bank2 0 0 ABS 0
+__Ludata_bank2 0 0 ABS 0
+__Hudata_bank3 0 0 ABS 0
+__Ludata_bank3 0 0 ABS 0
+%segments
+barfunc FD0 FFF CODE FD0 0
+%locals
+build/default/production/main.o
+main.asm
+13 7E8 0 CODE 0
+14 7E9 0 CODE 0
+21 7EA 0 CODE 0
+22 7EB 0 CODE 0
+23 7EC 0 CODE 0
+39 7ED 0 CODE 0
+43 7EE 0 CODE 0
+44 7EF 0 CODE 0
+45 7F0 0 CODE 0
+46 7F1 0 CODE 0
+47 7F2 0 CODE 0
+50 7F3 0 CODE 0
+51 7F4 0 CODE 0
+52 7F5 0 CODE 0
+53 7F6 0 CODE 0
+54 7F7 0 CODE 0
+55 7F8 0 CODE 0
+56 7F9 0 CODE 0
+60 7FA 0 CODE 0
+61 7FB 0 CODE 0
+63 7FC 0 CODE 0
+64 7FD 0 CODE 0
+65 7FE 0 CODE 0
+66 7FF 0 CODE 0
